@@ -1,0 +1,71 @@
+## What Ligero should do.
+
+* it should be able to help a group using Agile and SCRUM to manage Sprints
+* it should keep track of Sprints/Stories/Tasks/Users and any data related to them.
+* it should provide a REST interface to query Sprints/Stories/Tasks/User information.
+* it should provide a WebUI to manage its resources and a "Story Board"
+* It should interact with ticketing systems (JIRA/redmine/etc) through plugins
+* it should have a Dashboard to help with Stand-ups (display last day's in progress/completed tasks)
+* It should generate reports on Sprint Data
+* it should graph data, across Sprints (velocity), particular to a Sprint (burn down charts), particular to a story (time spend on story across sprints)
+* It should allow the user to manage time spent on tasks.
+* it should allow the Scrum master to create a Story based on a template
+
+## Concepts 
+
+### Group
+
+A group has users who work on the tasks, it also has a velocity to track the group's speed of progress. Velocity should be calculated from the average completed story points from past "Sprints"
+
+A group has:
+
+* Users
+* Velocity
+
+### Sprints
+
+Sprints are delimited by the Start and End date and are the basic units of development, they are composed of Stories, User capacity is tracked in Sprints as the amount of man/hours available that Sprint to work on Stories/Tasks. Charts are generate for the current Sprint based on User work.Story Points are tracked by Sprint to Sprint to calculate velocity. Each Sprint has a theme that describe the majority of tasks being performed during that Sprint
+
+A Sprint has:
+
+* Stories
+* Beginning Date
+* Finish Date
+* User Capacity
+* Charts (Burn Down, Group effort, etc)
+* Theme
+* Stories Points
+* Definition of Done
+
+### Stories
+
+Stories are defined as a container of tasks, requested by a Business Owner and with a Business Value, each story has a value that is later on used to calculate velocity. (I think value points should be calculated from the sum of time of the contained tasks). Story Pass or Fail based on their Sprint Definition of Done
+
+a Story has:
+
+* Tasks
+* Business Value
+* Value Points (Story Points)
+* Business Owner
+* Pass/Fail
+
+### Tasks
+
+A tasks is defined as a single unit of work within a story, it has a state to reflect its current status and an assigned user who is currently assigned to the tasks. The tasks may be impeded. While working on the tasks the user writes to the worklog to reflect the work being done.
+
+a Task has:
+
+* Time
+* State (not-started, in-progress, in-testing, completed)
+* User
+* Impeded
+* Worklog
+
+### Impediments
+
+An impediment is defined as anything that prevent a task from being completed. Marking a tasks as impeded also marks the Story as impeded
+
+An Impediment has:
+
+	* Source
+
