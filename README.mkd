@@ -67,5 +67,5 @@ An impediment is defined as anything that prevent a task from being completed. M
 
 An Impediment has:
 
-	* Source
+* Source
 
