@@ -19,12 +19,29 @@ Spanish symonym for Agil ( Agile ) [http://www.wordreference.com/definicion/lige
 
 ### Group
 
-A group has users who work on the tasks, it also has a velocity to track the group's speed of progress. Velocity should be calculated from the average completed story points from past "Sprints"
+A group has users who work on the tasks, it also has a velocity to track the group's speed of progress. Velocity should be calculated from the average completed story points from past "Sprints". Capacity is desribed as the amount of time that this group has to spend on tasks in a given Sprint.
 
 A group has:
 
 * Users
 * Velocity
+* Capacity
+
+### Backlog
+
+Backlogs are placeholder for Stories before they are assigned to Sprints
+
+A Backlog has:
+
+* Stories
+
+## Epic
+
+Epic are defined as projects too big to be completed in a single Sprint, the Stories in an Epic may span multiple Sprints
+
+An Epic has:
+
+* Stories
 
 ### Sprints
 
