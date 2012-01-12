@@ -1,3 +1,7 @@
+# Ligero 
+
+Spanish symonym for Agil ( Agile ) [http://www.wordreference.com/definicion/ligero]
+
 ## What Ligero should do.
 
 * it should be able to help a group using Agile and SCRUM to manage Sprints
