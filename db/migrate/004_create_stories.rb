@@ -7,6 +7,8 @@ class CreateStories < ActiveRecord::Migration
       t.integer :business_owner_id
       t.integer :description
       t.integer :sprint_id
+      t.integer :epic_id
+      t.integer :backlog_id
       t.boolean :state
     end
   end
